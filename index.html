@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+    <title>VentaComida</title>
+    <style>
+        table,th,td{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color:crimson;">FasTFood</h1>
+    <form action="/formulario" method="get">
+        <label for="buscarTxt">Buscar</label>
+        <input name="buscar" type="text" id="buscarTxt" placeholder="Buscar..."/>
+        <br>
+        <img src="img/Burger y papas.png" width="400">
+        <img src="img/Tacos.png" width="400">
+        <br>
+        <textarea name="Comentarios" placeholder="Comentarios..." ></textarea>
+        <input type="submit"/>
+    </form>
+    <table style="width: 400px;">
+
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Cantidad</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Cookie drug</td>
+                <td>24.23 onza</td>
+                <td>560.00 $</td>
+            </tr>
+            <tr>
+                <td>Puff Heavy</td>
+                <td> 18.22 onza</td>
+                <td> 620.01 $</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td>Resumen</td>
+            <td>42.45 onza</td>
+            <td>1180.01 $</td>
+
+        </tfoot>
+    </table>
+</body>
+</html>
