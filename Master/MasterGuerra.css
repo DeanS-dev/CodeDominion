@@ -1,0 +1,153 @@
+/*Opciones globales*/
+@font-face {
+    font-family: titulo;
+    src: url("Fuentes/GameOfSquids.otf");
+}
+@font-face {
+    font-family: subTitulo;
+    src: url(Fuentes/SwilyBright-Italic.otf);
+}
+.clearfix{
+    overflow: auto;
+  }
+main,header,footer{
+    width: 800px;
+    margin: auto;
+    background: white;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 20px;
+}
+
+h1,h2,h3,h4,h5,h6,p,ul,li{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/*Fuentes*/
+/*Heading*/
+#logo{
+    float: left ;
+    margin-right: 20px;
+}
+h1{font-family: titulo;}
+h2{font-family: subTitulo;}
+
+
+
+
+/*Menu*/
+nav ul li a{
+    text-decoration: none;
+    color: inherit;
+    
+}
+nav ul{
+    padding: 0px;
+    margin: 0px;
+}
+nav ul li{
+    padding: 5px;
+    margin: 1px;
+    list-style-type: none;
+    float: left;
+    background: black;
+    color:white;
+    text-transform: uppercase;
+    width: 90px;
+    font-size: 10px;
+    text-align: center;
+    transition: all 500ms;
+}
+nav ul li:first-child{
+border-radius: 15px 0 0 15px;
+}
+nav ul li:last-child{
+border-radius: 0px 15px 15px 0px;
+}
+nav ul li:hover{
+    background-color:white;
+    color: black;
+}
+
+/*Body*/
+body{
+    background: darkgray;
+}
+
+
+
+
+
+/*footer*/
+
+/*sobrante*/
+
+/*----------CARROUSEL-----*/
+#carrousel #conteidoCarrousel .diapositiva img{
+width: 100%;
+
+}
+#carrousel #conteidoCarrousel .diapositiva {
+    width: 800px;
+    height: 800px;
+    float: left;
+    
+
+}
+#conteidoCarrousel{
+    width: 800px;
+    height: 800px;
+    overflow: hidden;
+}
+#mascara{
+    width: 4200px;
+    height: 800px;
+    animation:mueve 10000ms;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+@keyframes mueve {
+    0%{left: 0px;}
+    20%{left: 0px;}
+    25%{left: -800px;}
+    45%{left: -800px;}
+    50%{left: -1600px;}
+    70%{left: -1600px;}
+    75%{left: -2400px;}
+    95%{left: -2400px;}
+    100%{left: -3200px;}
+
+}
+/*-------------------contenido-----------------*/
+#contenido article{
+width: 25%;
+float: left;
+}
+
+#contenido article img{
+    width: 100%;
+    
+}
+#contenido .datos{
+    padding: 10px;
+
+}
+#contenido .datos h2{
+    text-align: center;
+}
+
+#highlight article{
+    width: 47%;
+    float: left;
+    }
+    
+    #highlight article img{
+        width: 100%
+        
+    }
+    #highlight .datos{
+        padding: 10px;
+    
+    }
